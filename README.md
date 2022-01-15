@@ -4,7 +4,7 @@ Tired of refreshing your Acorn every hour to see if your courses released their 
 Keep reading for detailed documentation on how to use this program.
 
 ## Notes and Documentation for the Grade Chcker Program
-* Main document: `checker.py`
+* Main file: `checker.py`
 
 The program checks for newly released grades on Acorn at user-specified frequencies.
 
