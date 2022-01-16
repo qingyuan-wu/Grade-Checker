@@ -1,14 +1,14 @@
-# Grade Checker
+# :100: Grade Checker
 Tired of refreshing your Acorn every hour to see if your courses released their grades? Grade Checker is the perfect solution! This program checks regularly (you specify the frequency) for newly released grades and sends you an e-mail in case there is any.
 
 Keep reading for detailed documentation on how to use this program.
 
-## Notes and Documentation for the Grade Chcker Program
+## :page_facing_up: Notes and Documentation for the Grade Chcker Program
 * Main document: `checker.py`
 
 The program checks for newly released grades on Acorn at user-specified frequencies.
 
-### Downloading Dependencies
+### :arrow_down: Downloading Dependencies
 On top of Python3, this program also requires **Selenium** and **ChromeDriver**.
 
 * [Selenium](https://www.selenium.dev/) is an open-source project supporting Web automation. To download using `pip`, type `pip install selenium`.
@@ -23,13 +23,13 @@ On top of Python3, this program also requires **Selenium** and **ChromeDriver**.
 5. You also need to enter your UTORID and password upon request by the program.
 6. `PERIOD`: this is the frequnecy at which the program refreshes the page for you. It should be between 300-600 seconds (5-10 minutes).
 
-### Basic Operting Method
+### :brain: Basic Operting Method
 * The program uses chromedriver to log into Acorn. It then navigates to the "Academic History" tab and reads all grade data at regular frequencies.
 * The grades that are read is compared to previous grades. If there's a change, the program sends an e-mail to each e-mail in `mailing_list`. 
 * The program keeps running even after the release of a grade, as it removes the course from the list of courses for you.
 * E-mails are sent using the `smtplib` module. See Python's documentation [here](https://docs.python.org/3/library/email.examples.html).
 
-### Other Notes
+### :page_facing_up: Other Notes
 * Acorn times out every 30-40 minutes despite the refreshes. This is accounted for in the program by first checking the grades that are read are non-empty.
 * You can call the `send_email` function to test whether you are able to receive e-mails. However, a test e-mail will be sent when you run the program.
 * By default, your grade is not included in the e-mail notification (only the course name). However, you can change this, as well as the content of the e-mail, by modifying the `message` parameter to the `send_email` function.
