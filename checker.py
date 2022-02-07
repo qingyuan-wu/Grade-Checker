@@ -186,7 +186,7 @@ def determine_greeting():
 
 if __name__ == '__main__':
     # list of recipient emails
-    mailing_list = []
+    mailing_list = ['qingyuan073@gmail.com']
 
     # WRITE DOWN COURSES WITH UNKNOWN GRADES, IN ORDER as they appear on Acorn, HERE:
     # Note this is just for notification purposes, you can write abbreviated course names
