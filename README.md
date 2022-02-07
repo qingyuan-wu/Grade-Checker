@@ -12,7 +12,8 @@ The program checks for newly released grades on Acorn at user-specified frequenc
 On top of Python3, this program also requires **Selenium** and **ChromeDriver**.
 
 * [Selenium](https://www.selenium.dev/) is an open-source project supporting Web automation. To download using `pip`, type `pip install selenium`.
-* ChromeDriver is a WebDriver. You must download the correct version [here](https://chromedriver.chromium.org/downloads) depending on your Chrome version. Currently, I have Chrome version 96.0.4664.110.
+* ChromeDriver is a WebDriver. You must download the correct version [here](https://chromedriver.chromium.org/downloads) depending on your Chrome version. Currently, I have Chrome version 98.0.4758.82 (as of Feb 7th, 2022).
+  * **make sure you add the ChromeDriver to path!!**. To do this, search 'environment variables' on your Windows search tab and you should see the option to 'edti system environment variables'. Then, navigate to `Environment Variables` -> `Path` -> `New` and add the **folder** of the webdriver (should be like `chromedriver_win32`) to your path variables.
 * ChromeDriver must also be added to PATH. There are multiple ways to do this documented [here](https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/).
 
 ### Using the Program
